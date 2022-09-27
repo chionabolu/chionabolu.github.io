@@ -1,5 +1,5 @@
 const sections = document.querySelectorAll('.section');
- const sectBtns = document.querySelectorAll('.controlls');
+ const sectBtns = document.querySelectorAll('.controls');
  const sectBtn = document.querySelectorAll('.control');
  const allSections = document.querySelector('.main-content');
 
@@ -14,11 +14,11 @@ const sections = document.querySelectorAll('.section');
          })
      }
 
-     //Sctions Active 
+     //Sections Active 
      allSections.addEventListener('click', (e) =>{
          const id = e.target.dataset.id;
          if(id){
-             //resmove selected from the other btns
+             //remove selected from the other btns
              sectBtns.forEach((btn) =>{
                  btn.classList.remove('active')
              })
